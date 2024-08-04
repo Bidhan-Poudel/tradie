@@ -9,7 +9,6 @@ import {
   Drawer,
   ScrollArea,
   rem,
-  useMantineTheme,
   Button,
 } from "@mantine/core";
 import { MantineLogo } from "@mantinex/mantine-logo";
@@ -21,10 +20,9 @@ import Link from "next/link";
 export const Headers = () => {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
-  const theme = useMantineTheme();
 
   return (
-    <Box pb={120}>
+    <Box pb={40}>
       <header className={classes.header}>
         <Group justify="space-around" h="100%">
           <MantineLogo size={30} />
@@ -37,11 +35,18 @@ export const Headers = () => {
             ))}
           </Group>
           <Group visibleFrom="sm">
-            {loginLinks.map((item) => (
-              <Button size="md" radius={"md"} key={item.link}>
-                {item.label}
-              </Button>
-            ))}
+            <Button
+              variant="default"
+              size={"sm"}
+              c={"black"}
+              color="white"
+              fw={400}
+            >
+              {loginLinks[0].label}
+            </Button>
+            <Button size={"sm"} fw={400}>
+              {loginLinks[1].label}
+            </Button>
           </Group>
 
           <Burger
@@ -71,11 +76,10 @@ export const Headers = () => {
           <Divider my="sm" />
 
           <Group justify="center" grow pb="xl" px="md">
-            {loginLinks.map((item) => (
-              <Button size="lg" className={classes.link} key={item.link}>
-                {item.label}
-              </Button>
-            ))}
+            <Button size={"compact-lg"} c={"black"} color="white">
+              {loginLinks[0].label}
+            </Button>
+            <Button size={"compact-lg"}>{loginLinks[1].label}</Button>
           </Group>
         </ScrollArea>
       </Drawer>

@@ -18,7 +18,7 @@ export const heroMock = {
     description: "Our open, positive, and proactive approach helps us find ways to align your work environment with the culture",
     button1: "Book Now",
     button2: "Read More",
-    preText: "Ready to Help You",
+    preText: "Ready to Help You!",
     image: "https://t3.ftcdn.net/jpg/03/65/24/56/360_F_365245622_ZdpOE7TrS84qSXN5qzDPpefMEzErs3MI.jpg"
 }
 

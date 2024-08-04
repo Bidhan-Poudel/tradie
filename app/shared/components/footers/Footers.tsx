@@ -37,7 +37,7 @@ export const Footer = () => {
       <Container className={classes.inner}>
         <div className={classes.logo}>
           <MantineLogo size={30} />
-          <Text size="xs" c="dimmed" className={classes.description}>
+          <Text size="xs" className={classes.description}>
             We make onboarding new employees ridiculously easy. On day one,
             they're ready to go. And retaining them is easier.
           </Text>
@@ -45,7 +45,7 @@ export const Footer = () => {
         <div className={classes.groups}>{groups}</div>
       </Container>
       <Container className={classes.afterFooter}>
-        <Text c="dimmed" size="sm">
+        <Text size="sm" className={classes.copyRight} >
           © 2020 mantine.dev. All rights reserved.
         </Text>
 
@@ -55,19 +55,19 @@ export const Footer = () => {
           justify="flex-end"
           wrap="nowrap"
         >
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          <ActionIcon size="lg" color="white" variant="subtle">
             <IconBrandTwitter
               style={{ width: rem(18), height: rem(18) }}
               stroke={1.5}
             />
           </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          <ActionIcon size="lg" color="white" variant="subtle">
             <IconBrandYoutube
               style={{ width: rem(18), height: rem(18) }}
               stroke={1.5}
             />
           </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          <ActionIcon size="lg" color={"white"} variant="subtle">
             <IconBrandInstagram
               style={{ width: rem(18), height: rem(18) }}
               stroke={1.5}

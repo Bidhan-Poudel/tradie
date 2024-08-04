@@ -4,6 +4,7 @@ import {
   Badge,
   Button,
   Card,
+  Container,
   Grid,
   Group,
   Stack,
@@ -17,7 +18,7 @@ import React from "react";
 
 export const BookingSection = () => {
   return (
-    <>
+    <Container size={"lg"} pt={"120"} pb={"80"}>
       <Badge>Contact Us</Badge>
       <Title fz={"30"} my={"lg"}>
         Booking Form
@@ -25,7 +26,7 @@ export const BookingSection = () => {
       <Text fz={"md"} my={"lg"}>
         Fill Out the form below to get a quote on your project.
       </Text>
-      <Grid pt={"60"} gutter={"xl"}>
+      <Grid gutter={"xl"}>
         <Grid.Col span={{ md: 7 }}>
           <Stack gap={"lg"}>
             <Group gap={"lg"}>
@@ -84,6 +85,6 @@ export const BookingSection = () => {
           </Stack>
         </Grid.Col>
       </Grid>
-    </>
+    </Container>
   );
 };
